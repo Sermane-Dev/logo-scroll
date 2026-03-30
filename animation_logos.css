@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.scroll-container {
+    padding-block: 8px;
+    overflow: hidden;
+    user-select: none;
+
+    --gap: 20px;
+    display: flex;
+    gap: 2rem;
+    gap: var(--gap);
+}
+
+.scroll-container ul{
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    
+    animation: scroll 80s linear infinite;
+}
+.scroll-container :hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
