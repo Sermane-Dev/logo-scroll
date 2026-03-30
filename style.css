@@ -21,6 +21,11 @@ html, body {
     gap: var(--gap);
 }
 
+.scroll-item img {
+    height: 70px;
+    width: auto;
+}
+
 .scroll-container ul{
     list-style: none;
     flex-shrink: 0;
