@@ -4,7 +4,11 @@
     padding: 0;
 }
 
-
+html, body {
+    width: 100%;
+    height: 140px;
+    background: transparent;
+}
 
 .scroll-container {
     padding-block: 8px;
