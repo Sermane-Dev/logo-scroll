@@ -26,6 +26,10 @@ html, body {
     width: auto;
 }
 
+.scroll-item .glide{
+    height: 75px;
+}
+
 .scroll-container ul{
     list-style: none;
     flex-shrink: 0;
